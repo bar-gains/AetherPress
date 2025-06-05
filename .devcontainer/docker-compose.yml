@@ -7,8 +7,8 @@ services:
       context: .. # The 'build' context points to the parent directory where .devcontainer is located
       dockerfile: .devcontainer/Dockerfile
     volumes:
-      # Mount the entire repository root into /chronos
-      - ../:/chronos:cached
+      # Mount the entire repository root into /aether
+      - ../:/aether:cached
     command: sleep infinity # Keep the container running indefinitely
     environment:
       # Pass environment variables from devcontainer.json/Codespace Secrets
@@ -35,16 +35,16 @@ services:
     environment:
       # --- IMPORTANT: Use GitHub Codespace Secrets for these values ---
       # These should match the credentials used in the DATABASE_URL in devcontainer.json
-      POSTGRES_DB: ${POSTGRES_DB:-chronoscraftDB} # Default 'chronoscraftDB' if secret not set
-      POSTGRES_USER: ${POSTGRES_USER:-chronosUSR} # Default 'chronosUSR' if secret not set
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-chronosPWD} # Default 'chronosPWD' if secret not set
+      POSTGRES_DB: ${POSTGRES_DB:-aethercraftDB} # Default 'aethercraftDB' if secret not set
+      POSTGRES_USER: ${POSTGRES_USER:-aetherUSR} # Default 'aetherUSR' if secret not set
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-aetherPWD} # Default 'aetherPWD' if secret not set
     ports:
       # Map port 5432 inside the container to 5432 on the Codespace host (optional, for external tools)
       - "5432:5432"
     networks:
       - app-network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-chronosUSR} -d ${POSTGRES_DB:-chronoscraftDB} -h localhost"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-aetherUSR} -d ${POSTGRES_DB:-aethercraftDB} -h localhost"]
       interval: 5s
       timeout: 5s
       retries: 10
