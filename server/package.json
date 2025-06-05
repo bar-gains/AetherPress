@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "lint": "echo 'Add linter setup here'",
+    "test": "echo 'Add test setup here'"
+  }
+}

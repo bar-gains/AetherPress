@@ -18,3 +18,7 @@ This folder contains the React/Next.js frontend for AetherPress.
 - Run `npm install` and `npm run dev` inside this folder to start the frontend in development mode.
 
 See the main project README for setup instructions and prerequisites.
+
+## Notes
+
+- For CI/CD and deployment, required secrets should be managed via GitHub repository secrets.

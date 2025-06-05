@@ -28,9 +28,9 @@ Thank you for your interest in contributing! This guide explains our workflow, c
 
 ## Local Development
 
-- Use VS Code Dev Containers or Codespaces for a consistent environment
+- The project uses a Dev Container setup (see `.devcontainer/`) for a consistent environment, including pre-installed VS Code extensions for Node.js, linting, formatting, Docker, Prisma, PostgreSQL, REST client, Tailwind CSS, and GitHub Copilot.
 - Secrets (e.g., database credentials) are managed via Codespace secrets
-- For local dev, copy `.env.example` to `.env` and fill in required values
+- For local dev, copy `.env.example` to `.env` and fill in required values. For CI/CD and deployment, secrets are managed via GitHub repository secrets.
 
 ## Running Tests
 

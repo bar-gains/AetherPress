@@ -10,3 +10,5 @@ This folder contains all project documentation for AetherPress, including:
 ## Contribution
 
 Update or add documentation here as the project evolves. See `CONTRIBUTING.md` for contribution workflow and standards.
+
+- For CI/CD and deployment, required secrets (API keys, credentials, etc.) should be added as GitHub repository secrets. See CONTRIBUTING.md for details.
