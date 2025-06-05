@@ -4,31 +4,31 @@ This document outlines the immediate next actions to kickstart the project, base
 
 ---
 
-## 1. Project Setup
+## 1. Project Setup ✅
 
-- [ ] Ensure Node.js (v14+) and npm are installed on all contributor machines.
-- [ ] Run `npm install` at the project root to install dependencies (add a `package.json` if missing).
-- [ ] Set up `.env` files for local development (copy from `.env.example` if available).
-- [ ] Open the project in VS Code and use Dev Containers or Codespaces for a consistent environment.
+- [x] Ensure Node.js (v14+) and npm are installed on all contributor machines.
+- [x] Run `npm install` at the project root to install dependencies (add a `package.json` if missing).
+- [x] Set up `.env` files for local development (copy from `.env.example` if available).
+- [x] Open the project in VS Code and use Dev Containers or Codespaces for a consistent environment.
 
-## 2. Repository Hygiene
+## 2. Repository Hygiene ✅
 
-- [ ] Confirm all placeholder files are removed and folder structure matches CONTRIBUTING.md.
-- [ ] Ensure all major folders have a `README.md` describing their purpose.
-- [ ] Update `.gitignore` to only ignore `node_modules/` at the root and not in `shared/`.
+- [x] Confirm all placeholder files are removed and folder structure matches CONTRIBUTING.md.
+- [x] Ensure all major folders have a `README.md` describing their purpose.
+- [x] Update `.gitignore` to only ignore `node_modules/` at the root and not in `shared/`.
 
-## 3. Initial Codebase Bootstrapping
+## 3. Initial Codebase Bootstrapping ✅
 
-- [ ] Scaffold the React/Next.js frontend in `client/` (e.g., `npx create-next-app@latest`).
-- [ ] Scaffold the Node.js/Express backend in `server/` (e.g., `npm init` + `express`).
-- [ ] Add a `shared/` module for types, utilities, and constants.
-- [ ] Add basic scripts in `scripts/` for linting, testing, and setup.
+- [x] Scaffold the React/Next.js frontend in `client/` (e.g., `npx create-next-app@latest`).
+- [x] Scaffold the Node.js/Express backend in `server/` (e.g., `npm init` + `express`).
+- [x] Add a `shared/` module for types, utilities, and constants.
+- [x] Add basic scripts in `scripts/` for linting, testing, and setup.
 
-## 4. Version Control & Branching
+## 4. Version Control & Branching ✅
 
-- [ ] Work on the `dev` branch for all new features and fixes.
-- [ ] Use `feature/*` branches for new features, merging into `dev` via PRs.
-- [ ] Require at least one code review before merging (see CONTRIBUTING.md).
+- [x] Work on the `dev` branch for all new features and fixes.
+- [x] Use `feature/*` branches for new features, merging into `dev` via PRs.
+- [x] Require at least one code review before merging (see CONTRIBUTING.md).
 
 ## 5. Core MVP Features (Phase 1)
 
