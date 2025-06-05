@@ -61,6 +61,20 @@ Thank you for your interest in contributing! This guide explains our workflow, c
 - Use GitHub Issues to report bugs or request features
 - Please search for existing issues before opening a new one
 
+## Solo Development Workflow
+
+As this is currently a solo project:
+
+- Create feature branches from `dev` for new features/changes
+- Self-review changes using the GitHub PR interface
+- Use PRs as checkpoints to:
+  - Review your own code
+  - Document changes
+  - Track feature completion
+  - Maintain a clean commit history
+- Merge to `dev` after self-review
+- Delete feature branches after merging
+
 ---
 
 Thank you for helping make AetherPress AI better!
