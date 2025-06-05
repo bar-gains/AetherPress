@@ -17,4 +17,8 @@ This folder contains the Node.js/Express backend for AetherPress.
 - Run `npm install` and `npm start` inside this folder to start the backend server.
 - Tests can be run with `npm test` (uses Vitest).
 
+## Deployment
+
+- For CI/CD and deployment, required secrets should be managed via GitHub repository secrets.
+
 See the main project README for setup instructions and prerequisites.

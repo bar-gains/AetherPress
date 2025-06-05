@@ -6,6 +6,7 @@ This folder contains configuration files for VS Code Dev Containers and Codespac
 
 - Provides a consistent, reproducible development environment for all contributors.
 - Includes Dockerfile, devcontainer.json, and related setup files.
+- Includes pre-installed VS Code extensions for Node.js, linting, formatting, Docker, Prisma, PostgreSQL, REST client, Tailwind CSS, and GitHub Copilot to streamline development.
 
 ## Usage
 
